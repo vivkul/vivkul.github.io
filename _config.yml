@@ -5,7 +5,7 @@ url: vivkul.github.io
 exclude: [ Gemfile, Gemfile.lock]
 description: "Personal blog of Viveka Kulharia."
 copyright: Copyright 2015 Viveka Kulharia.
-googleAnalyticsKey: UA-44361203-1
+googleAnalyticsKey: UA-71347900-1
 gravatar_url: http://s.gravatar.com/avatar/d6541939a47482cd5ae872b15197f213?s=80
 author:
   name: Viveka Kulharia

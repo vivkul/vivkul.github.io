@@ -203,7 +203,10 @@
                       {% if site.author.se.overall %}
                         <li><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts"> Stackexchange</a></li>
                       {% endif %}
-                    {% endif %}  
+                    {% endif %}
+		    {% if site.author.facebook %}
+		    	<li><a href="http://facebook.com/{{ site.author.facebook }}">Facebook</a></li>
+		    {% endif %}  
                     <!--<li>  <a href="/research.html">Research</a></li>
                     <li>  <a href="/publications.html">Publications</a></li>-->
 

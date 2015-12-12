@@ -1,0 +1,56 @@
+markdown: kramdown
+pygments: true
+permalink: /posts/:title
+url: vivkul.github.io
+exclude: [ Gemfile, Gemfile.lock]
+description: "Personal blog of Viveka Kulharia."
+copyright: Copyright 2015 Viveka Kulharia.
+googleAnalyticsKey: UA-44361203-1
+gravatar_url: http://s.gravatar.com/avatar/d6541939a47482cd5ae872b15197f213?s=80
+author:
+  name: Viveka Kulharia
+  github: vivkul
+  linkedin: vivkul
+  se:
+    so: 2807033
+    math: 255054
+    overall: 3340670
+  bitbucket: vivkul
+
+unused:
+research:
+  - text: Influence of Operations Research on Machine Learning
+    elements:
+      - name: Machine Learning
+        url: http://jmlr.org/SOMETHING
+        text: |
+	 To be added
+      - name: Bayesian
+        url: http://arxiv.org/abs/SOMETHING
+        text: |
+	 To be added
+  - text: Influence of Machine Learning on Operations Research
+    elements:
+      - name: Optimization
+        url: http://arxiv.org/abs/SOMETHING
+        text: |
+	 To be added
+  - text: Publication Links
+    elements:
+      - name: Google Scholar
+        url: http://scholar.google.com/citations?user=SOMEUSER
+      - name: DBLP
+        url: http://www.informatik.uni-trier.de/SOMEUSER
+      - name: Microsoft Academic Search
+        url: http://academic.research.microsoft.com/Author/SOMEUSER
+  - text: Other Research Documents
+    elements:
+      - name: Viveka Kulharia
+        url: http://home.iitk.ac.in/~vivkul/
+      - name: Viveka Kulharia
+        url: http://home.iitk.ac.in/~vivkul/
+
+
+unused:
+  - name: Googlecode
+    url: https://code.google.com/

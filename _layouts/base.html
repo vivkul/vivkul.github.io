@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>
+    {% if page.title %}
+      {{ page.title }} &ndash;
+    {% endif %}
+      {{ site.author.name }}
+    </title>
+
+    <meta name="author" content="{{ site.author.name }}" />
+    <meta name="description" content="{{ site.discription }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Atom and ICON -->
+    <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- HTML5: for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+
+    /* move special fonts to HTML head for better performance */
+    @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+
+
+    /* custom template */
+    html, body {
+       height: 100%;
+       font-family:'Open Sans',arial,sans-serif;
+    }
+
+    a {
+      color:#222222;
+    }
+
+    .wrapper, .row {
+       height: 100%;
+       margin-left:0;
+       margin-right:0;
+    }
+
+    .wrapper:before, .wrapper:after,
+    .column:before, .column:after {
+        content: "";
+        display: table;
+    }
+
+    .wrapper:after,
+    .column:after {
+        clear: both;
+    }
+
+    .column {
+        height: 100%;
+        overflow: auto;
+        *zoom:1;
+    }
+
+    .column .padding {
+        padding: 20px;
+    }
+
+    .box {
+        bottom: 0; /* increase for footer use */
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image:url('/static/images/fig4.jpg');
+        background-size:cover;
+        background-attachment:fixed;
+    }
+
+    .divider {
+      margin-top:32px;
+    }
+
+    #main {
+        background-color:#fefefe;
+    }
+    #main .img-circle {
+      margin-top:18px;
+      height:70px;
+      width:70px;
+    }
+
+    #sidebar, #sidebar a {
+        color:#ffffff;
+        background-color:transparent;
+      text-shadow:1px 0 1px #888888;
+    }
+    #sidebar a.logo {
+      display:block;
+      padding:0px;
+      background-color:#fff;
+      color:#777777;
+      height:40px;
+      width:40px;
+      margin:15px;
+      font-size:26px;
+      font-weight:700;
+      text-align:center;
+      text-decoration:none;
+      text-shadow:0 0 0;
+    }
+    #sidebar-footer {
+      position:absolute;bottom:5px;
+    }
+    #footer {
+      margin-bottom:20px;
+    }
+
+    /* center and adjust the sidebar contents on smaller devices */
+    @media (max-width: 768px) {
+      #sidebar,#sidebar a.logo {
+        text-align:center;
+        margin:0 auto;
+        margin-top:30px;
+        font-size:26px;
+      }
+      #sidebar a.logo {
+        font-size:50px;
+        height:75px;
+        width:75px;
+        margin-bottom:30px;
+      }
+    }
+
+
+
+
+    /* bootstrap overrides */
+
+    h1,h2,h3 {
+       font-weight:800;
+       font-family:'Open Sans',arial,sans-serif;
+    }
+
+    .jumbotron {
+      background-color:transparent;
+    }
+    .label-default {
+      background-color:#dddddd;
+    }
+    .page-header {
+      margin-top: 55px;
+      padding-top: 9px;
+      border-top:1px solid #eeeeee;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+
+    .col-sm-9.full {
+        width: 100%;
+    }
+
+    small.text-muted {
+      font-family:courier,courier-new,monospace;
+    }
+
+    /*Legacy from default theme*/
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    </style>
+
+  </head>
+
+
+  <body>
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+          
+            <!-- sidebar -->
+            <div class="column col-sm-3" id="sidebar">
+                <a class="logo" href="/"><img src="/static/images/tt.jpg" alt="T" width="40" height="40"></a>
+                <ul class="nav">
+                    <li><a href="#posts">Posts</a>
+                    </li>
+                    {% if site.author.twitter %}
+                      <li> <a href="https://twitter.com/{{ site.author.twitter }}"> Twitter</a></li>
+                    {% endif %}
+                    {% if site.author.github %}
+                          <li> <a href="https://github.com/{{ site.author.github }}">Github</a></li>
+                    {% endif %}
+                    {% if site.author.linkedin %}
+                          <li> <a href="http://linkedin.com/in/{{ site.author.linkedin }}">Linkedin</a></li>
+                    {% endif %}
+                    {% if site.author.se %}
+                      {% if site.author.se.overall %}
+                        <li><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts"> Stackexchange</a></li>
+                      {% endif %}
+                    {% endif %}  
+                    <!--<li>  <a href="/research.html">Research</a></li>
+                    <li>  <a href="/publications.html">Publications</a></li>-->
+
+                </ul>
+                <ul class="nav hidden-xs" id="sidebar-footer">
+                    <li>
+                      Based on Bootply/Basis
+                    </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+          
+            <!-- main -->
+            <div class="column col-sm-9" id="main">
+                <div class="padding">
+                    <div class="full col-sm-9">
+                      
+                        <!-- content -->
+                        <div class="col-sm-12">
+                        {{ content }}
+                        </div>
+
+                        <div class="col-sm-12" id="posts">   
+                          <div class="page-header text-muted divider">
+                          Posts
+                          </div> 
+                        </div>
+
+                        <div class="col-sm-12">
+                          <p>
+                          {% if page.title %}
+                            Below are some of my other posts
+                          {% else %}
+                            Following are my blog entries
+                          {% endif %}
+                          </p>
+                        </div>
+                        <div class="row divider">    
+                           <div class="col-sm-12"><hr></div>
+                        </div>
+
+                        {% for post in site.posts %}  
+
+                          <div class="row">    
+                            <div class="col-sm-9">
+                              <h4><a href="{{ post.url }}">{{ post.title }}</a> </h4>
+                            </div>
+                            <div class="col-sm-3">
+                            <h4><a href="{{ post.url }}" class="pull-right text-muted"><small>{{ post.date | date: "%B %e, %Y" }}</small></a></h4>
+                            </div>
+                            <hr> 
+                          </div>
+
+                        {% endfor %}
+
+                        <div class="col-sm-12"><hr></div>
+                        <div class="col-sm-12">
+                          <p align="center">{{ site.copyright }} Last update (ET): {{site.time}}. <a href="/atom.xml">Atom Feed</a> </p>
+                        </div>                        
+                        {% include analytics.html %}
+                                              
+                    </div><!-- /col-9 -->
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->
+          
+        </div>
+    </div>
+</div>
+  <!-- script references -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

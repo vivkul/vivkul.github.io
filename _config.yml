@@ -24,17 +24,17 @@ research:
       - name: Machine Learning
         url: http://jmlr.org/SOMETHING
         text: |
-	 To be added
+         To be added
       - name: Bayesian
         url: http://arxiv.org/abs/SOMETHING
         text: |
-	 To be added
+         To be added
   - text: Influence of Machine Learning on Operations Research
     elements:
       - name: Optimization
         url: http://arxiv.org/abs/SOMETHING
         text: |
-	 To be added
+         To be added
   - text: Publication Links
     elements:
       - name: Google Scholar

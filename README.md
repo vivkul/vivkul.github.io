@@ -1,7 +1,7 @@
 #vivkul.github.io
 ================
 
-Jekyll powered "app" for [my webpage](http://vivkul.github.io/). This is very modular. All you need to change in the data in _config.yaml and you can have your own awesome web home. I used the information from `up` and `left` repos to hack this.
+Jekyll powered "app" for [my webpage](http://vivkul.github.io/). This is very modular. All you need to change in the data in _config.yaml and you can have your own awesome web home. I am thankful to [thejat](http://thejat.github.io/) for introducing me to Jekyll.
 
 ------------
 

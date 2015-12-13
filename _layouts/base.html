@@ -185,38 +185,7 @@
         <div class="row">
           
             <!-- sidebar -->
-            <div class="column col-sm-3" id="sidebar">
-                <a class="logo" href="/"><img src="/static/images/me.jpg" alt="T" width="60" height="60"></a>
-                <ul class="nav">
-                    <li><a href="#posts">Posts</a>
-                    </li>
-                    {% if site.author.twitter %}
-                      <li> <a href="https://twitter.com/{{ site.author.twitter }}"> Twitter</a></li>
-                    {% endif %}
-                    {% if site.author.github %}
-                          <li> <a href="https://github.com/{{ site.author.github }}">Github</a></li>
-                    {% endif %}
-                    {% if site.author.linkedin %}
-                          <li> <a href="http://linkedin.com/in/{{ site.author.linkedin }}">Linkedin</a></li>
-                    {% endif %}
-                    {% if site.author.se %}
-                      {% if site.author.se.overall %}
-                        <li><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts"> Stackexchange</a></li>
-                      {% endif %}
-                    {% endif %}
-		    {% if site.author.facebook %}
-		    	<li><a href="http://facebook.com/{{ site.author.facebook }}">Facebook</a></li>
-		    {% endif %}  
-                    <!--<li>  <a href="/research.html">Research</a></li>
-                    <li>  <a href="/publications.html">Publications</a></li>-->
-
-                </ul>
-                <ul class="nav hidden-xs" id="sidebar-footer">
-                    <li>
-                      Based on Bootply/Basis
-                    </li>
-                </ul>
-            </div>
+            {% include navbar.html %}
             <!-- /sidebar -->
           
             <!-- main -->
@@ -263,9 +232,7 @@
                         {% endfor %}
 
                         <div class="col-sm-12"><hr></div>
-                        <div class="col-sm-12">
-                          <p align="center">{{ site.copyright }} Last update (ET): {{site.time}}. <a href="/atom.xml">Atom Feed</a> </p>
-                        </div>                        
+                        {% include footer.html %}                       
                         {% include analytics.html %}
                                               
                     </div><!-- /col-9 -->

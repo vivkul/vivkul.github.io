@@ -23,7 +23,7 @@ where we'll pull your name, Twitter username, and things like that.
 
 There's a few other places that you'll want to change, too:
 
-- [base.html](https://github.com/vivkul/vivkul.github.io/blob/master/_layouts/base.html):
+- [navbar.html](https://github.com/vivkul/vivkul.github.io/blob/master/_includes/navbar.html):
   Change it to edit navbar
 - [CNAME](https://github.com/vivkul/vivkul.github.io/blob/master/CNAME): If you're using
   this on GitHub Pages with a custom domain name, you'll want to change this

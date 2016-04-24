@@ -2,8 +2,11 @@
     <a class="logo" href="/"><img src="/static/images/me.jpg" alt="T" width="60" height="60"></a>
     <ul class="nav">
         <li><a href="#posts">Posts</a></li>
+        {% if site.author.resume %}
+          <li> <a href="{{ site.author.resume }}">Resume</a></li>
+        {% endif %}
         {% if site.author.twitter %}
-          <li> <a href="https://twitter.com/{{ site.author.twitter }}"> Twitter</a></li>
+          <li> <a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a></li>
         {% endif %}
         {% if site.author.github %}
           <li> <a href="https://github.com/{{ site.author.github }}">Github</a></li>

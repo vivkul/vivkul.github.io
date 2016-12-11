@@ -4,4 +4,4 @@ layout: base
 ---
 
 
-I am interested in the field of Machine Learning. Specifically, Bayesian inference and Deep learning models interest me.
+I am interested in the field of machine learning. Specifically, deep learning models and bayesian inference interest me.

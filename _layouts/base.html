@@ -200,25 +200,25 @@
 
                         <div class="col-sm-12" id="posts">   
                           <div class="page-header text-muted divider">
-                          Posts
+                          <h2>Posts</h2>
                           </div> 
                         </div>
 
                         <div class="col-sm-12">
-                          <p>
+                          
                           {% if page.title %}
-                            Below are my blog posts
+                            <h4>Below are my blog posts</h4>
                           {% else %}
-                            Following are my blog entries
+                            <h4>Following are my blog entries</h4>
                           {% endif %}
-                          </p>
+                          
                         </div>
                         <div class="row divider">    
                            <div class="col-sm-12"><hr></div>
                         </div>
 
                         {% for category in site.categories %}
-                          <h2><a name="{{ category | first }}">{{ category | first }}</a></h2>
+                          <h3><a name="{{ category | first }}">{{ category | first }}</a></h3>
                           <ul>
                           {% for posts in category %}
                             {% for post in posts %}

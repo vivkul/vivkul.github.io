@@ -5,10 +5,10 @@ comments: true
 category: Dev
 ---
 
-tmux is a terminal multiplexer which is very efficient system to use while working through command line. Following are few of the helpful commands that will bring command in life.
+#### tmux is a terminal multiplexer which is very efficient system to use while working through command line. Following are few of the helpful commands that will bring command in life.
 
-~~~~
-	tmux new -s vivkul #creates a new tmux session named vivkul
+#### ~~~~
+####	tmux new -s vivkul #creates a new tmux session named vivkul
 	tmux ls #shows all the tmux sessions
 	tmux a -t vivkul #attaches the tmux session vivkul
 	ctrl-b " #creates horizontal split
@@ -21,4 +21,4 @@ tmux is a terminal multiplexer which is very efficient system to use while worki
 	q #to exit up-down
 	ctrl-b x #kills the split/tmux session
 	ctrl-b d #detaches the tmux session
-~~~~
+#### ~~~~

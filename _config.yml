@@ -20,9 +20,17 @@ author:
   mail: vivekakulharia@gmail.com
   resume: http://vivkul.github.io/static/resume.pdf
 
-unused:
 research:
-  - text: Influence of Operations Research on Machine Learning
+  - text: Publication Links
+    elements:
+      - name: Google Scholar
+        url: http://scholar.google.com/citations?user=wjrOaIIAAAAJ
+      - name: DBLP
+        url: http://www.informatik.uni-trier.de/SOMEUSER
+      - name: Microsoft Academic Search
+        url: http://academic.research.microsoft.com/Author/SOMEUSER
+unused:    
+    - text: Influence of Operations Research on Machine Learning
     elements:
       - name: Machine Learning
         url: http://jmlr.org/SOMETHING
@@ -38,14 +46,6 @@ research:
         url: http://arxiv.org/abs/SOMETHING
         text: |
          To be added
-  - text: Publication Links
-    elements:
-      - name: Google Scholar
-        url: http://scholar.google.com/citations?user=SOMEUSER
-      - name: DBLP
-        url: http://www.informatik.uni-trier.de/SOMEUSER
-      - name: Microsoft Academic Search
-        url: http://academic.research.microsoft.com/Author/SOMEUSER
   - text: Other Research Documents
     elements:
       - name: Viveka Kulharia

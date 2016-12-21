@@ -22,7 +22,7 @@ author:
   
 unused:
 research:
-  - text: Publication Links
+    - text: Publication Links
     elements:
       - name: Google Scholar
         url: http://scholar.google.com/citations?user=wjrOaIIAAAAJ

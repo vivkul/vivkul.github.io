@@ -2,6 +2,7 @@
 layout: post
 title:  "Preparedness for installing CAFFE"
 comments: true
+category: Dev
 ---
 
 [<font color="#3498DB">Official website</font>](http://caffe.berkeleyvision.org/installation.html) is helpful in providing the directions for installations and solutions to problems, if encountered, can be found online (though not easily). Still, there are some precautions to be taken while installing CAFFE.

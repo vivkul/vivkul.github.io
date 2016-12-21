@@ -217,7 +217,7 @@
                            <div class="col-sm-12"><hr></div>
                         </div>
 
-                        {% for category in site.categories %}
+                        {% for category in site.categories reversed %}
                           <h3><a name="{{ category | first }}">{{ category | first }}</a></h3>
                           <ul style="list-style-type: none;">
                           {% for posts in category %}

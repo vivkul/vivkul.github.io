@@ -29,7 +29,8 @@ research:
         url: http://www.informatik.uni-trier.de/SOMEUSER
       - name: Microsoft Academic Search
         url: http://academic.research.microsoft.com/Author/SOMEUSER
-unused:    
+unused:
+research_work:
     - text: Influence of Operations Research on Machine Learning
     elements:
       - name: Machine Learning

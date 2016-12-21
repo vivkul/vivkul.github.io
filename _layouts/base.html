@@ -232,24 +232,26 @@
                         {% endfor %}
                      
                         {% for category in site.categories %}
+                          <h2><a name="{{ category | first }}">{{ category | first }}</a></h2>
+                          <ul>
                           {% for posts in category %}
-                              {% for post in posts %}
-                                {% if post.url %}
-                                  <div class="row">  
-                                   <div class="col-sm-3">
-                                     <h4><a name="{{ category | first }}">{{ category | first }}</a> </h4>
-                                   </div>
-                                   <div class="col-sm-6">
-                                     <h4><a href="{{ post.url }}">{{ post.title }}</a> </h4>
-                                   </div>
-                                   <div class="col-sm-3">
-                                   <h4><a href="{{ post.url }}" class="pull-right text-muted"><small>{{ post.date | date: "%B %e, %Y" }}</small></a></h4>
-                                   </div>
-                                   <hr> 
-                                 </div>
-                                {% endif %}
-                              {% endfor %}
+                            {% for post in posts %}
+                              {% if post.url %}
+                                <li>
+                                <div class="row">  
+                                  <div class="col-sm-9">
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a> </h4>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <h4><a href="{{ post.url }}" class="pull-right text-muted"><small>{{ post.date | date: "%B %e, %Y" }}</small></a></h4>
+                                  </div>
+                                  <hr> 
+                                </div>
+                                </li>
+                              {% endif %}
                             {% endfor %}
+                          {% endfor %}
+                          </ul>
                         {% endfor %}
                      
                         <div class="col-sm-12"><hr></div>

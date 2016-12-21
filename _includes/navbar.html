@@ -3,27 +3,27 @@
     <ul class="nav">
         <li><a href="#posts">Posts</a></li>
         {% if site.author.resume %}
-          <li> <a href="{{ site.author.resume }}">Resume</a></li>
+          <li> <a href="{{ site.author.resume }}" target="_blank">Resume</a></li>
         {% endif %}
         {% if site.author.github %}
-          <li> <a href="https://github.com/{{ site.author.github }}">Github</a></li>
+          <li> <a href="https://github.com/{{ site.author.github }}" target="_blank">Github</a></li>
         {% endif %}
         {% if site.author.se %}
           {% if site.author.se.overall %}
-            <li><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts"> Stackexchange</a></li>
+            <li><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts" target="_blank"> Stackexchange</a></li>
           {% endif %}
         {% endif %}
         {% if site.author.mail %}
           <li><a href="mailto:{{ site.author.mail }}">E-mail</a></li>
         {% endif %}
         {% if site.author.linkedin %}
-          <li> <a href="http://linkedin.com/in/{{ site.author.linkedin }}">Linkedin</a></li>
+          <li> <a href="http://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">Linkedin</a></li>
         {% endif %}
         {% if site.author.twitter %}
-          <li> <a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a></li>
+          <li> <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">Twitter</a></li>
         {% endif %}
         {% if site.author.facebook %}
-          <li><a href="http://facebook.com/{{ site.author.facebook }}">Facebook</a></li>
+          <li><a href="http://facebook.com/{{ site.author.facebook }}" target="_blank">Facebook</a></li>
         {% endif %}
         <!--<li>  <a href="/research.html">Research</a></li>
         <li>  <a href="/publications.html">Publications</a></li>-->

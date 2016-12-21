@@ -23,7 +23,7 @@ author:
 unused:
 research:
   - text: Publication Links
-  elements:
+    elements:
       - name: Google Scholar
         url: http://scholar.google.com/citations?user=wjrOaIIAAAAJ
       - name: DBLP
@@ -31,7 +31,7 @@ research:
       - name: Microsoft Academic Search
         url: http://academic.research.microsoft.com/Author/SOMEUSER
   - text: Influence of Operations Research on Machine Learning
-  elements:
+    elements:
       - name: Machine Learning
         url: http://jmlr.org/SOMETHING
         text: |

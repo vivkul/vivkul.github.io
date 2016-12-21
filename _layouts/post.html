@@ -7,8 +7,9 @@ layout: base
   <section> {{ page.date | date: "%B %e, %Y" }} </section>
 
   {{ content }}
-  <hr>
-  <hr>
+  <div class="row divider">    
+    <div class="col-sm-12"><hr></div>
+  </div>
   {% if page.comments %}
 	<div id="disqus_thread"></div>
 	    <script type="text/javascript">

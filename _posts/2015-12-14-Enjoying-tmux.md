@@ -2,6 +2,7 @@
 layout: post
 title:  "Enjoying tmux"
 comments: true
+category: Dev
 ---
 
 tmux is a terminal multiplexer which is very efficient system to use while working through command line. Following are few of the helpful commands that will bring command in life.

@@ -231,20 +231,18 @@
 
                         {% endfor %}
                      
-                        {% for post in site.research %}  
-
-                          <div class="row">    
-                            <div class="col-sm-9">
-                              <h4><a href="{{ post.url }}">Viveka Kulharia</a> </h4>
-                            </div>
-                            <div class="col-sm-3">
-                            <h4><a href="{{ post.url }}" class="pull-right text-muted"><small>vivkul</small></a></h4>
-                            </div>
-                            <hr> 
-                          </div>
-
+                        {% for category in site.categories %}
+                          <li><a name="{{ category | first }}">{{ category | first }}</a>
+                            <ul>
+                            {% for posts in category %}
+                              {% for post in posts %}
+                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                              {% endfor %}
+                            {% endfor %}
+                            </ul>
+                          </li>
                         {% endfor %}
-
+                     
                         <div class="col-sm-12"><hr></div>
                         {% include footer.html %}                       
                         {% include analytics.html %}

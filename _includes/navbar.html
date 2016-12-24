@@ -1,32 +1,32 @@
 <div class="column col-sm-2" id="sidebar">
     <ul class="nav">
         <li style="height:150px"><a class="logo" href="/"><img src="/static/images/me.jpg" alt="T" width="120" height="120"></a></li>
-        <li><a href="#posts"><h4>Posts</h4></a></li>
+        <li id="hovercol"><a href="#posts"><h4>Posts</h4></a></li>
         {% if site.author.resume %}
-          <li> <a href="{{ site.author.resume }}" target="_blank"><h4>Resume</h4></a></li>
+          <li id="hovercol"> <a href="{{ site.author.resume }}" target="_blank"><h4>Resume</h4></a></li>
         {% endif %}
         {% if site.author.github %}
-          <li> <a href="https://github.com/{{ site.author.github }}" target="_blank"><h4>Github</h4></a></li>
+          <li id="hovercol"> <a href="https://github.com/{{ site.author.github }}" target="_blank"><h4>Github</h4></a></li>
         {% endif %}
         {% if site.author.se %}
           {% if site.author.se.overall %}
-            <li><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts" target="_blank"><h4>Stackexchange</h4></a></li>
+            <li id="hovercol"><a href="https://stackexchange.com/users/{{ site.author.se.overall }}?tab=accounts" target="_blank"><h4>Stackexchange</h4></a></li>
           {% endif %}
         {% endif %}
         {% if site.author.mail %}
-          <li><a href="mailto:{{ site.author.mail }}"><h4>E-mail</h4></a></li>
+          <li id="hovercol"><a href="mailto:{{ site.author.mail }}"><h4>E-mail</h4></a></li>
         {% endif %}
         {% if site.author.linkedin %}
-          <li> <a href="http://linkedin.com/in/{{ site.author.linkedin }}" target="_blank"><h4>Linkedin</h4></a></li>
+          <li id="hovercol"> <a href="http://linkedin.com/in/{{ site.author.linkedin }}" target="_blank"><h4>Linkedin</h4></a></li>
         {% endif %}
         {% if site.author.twitter %}
-          <li> <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><h4>Twitter</h4></a></li>
+          <li id="hovercol"> <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><h4>Twitter</h4></a></li>
         {% endif %}
         {% if site.author.facebook %}
-          <li><a href="http://facebook.com/{{ site.author.facebook }}" target="_blank"><h4>Facebook</h4></a></li>
+          <li id="hovercol"><a href="http://facebook.com/{{ site.author.facebook }}" target="_blank"><h4>Facebook</h4></a></li>
         {% endif %}
-        <!--<li>  <a href="/research.html"><h4>Research</h4></a></li>
-        <li>  <a href="/publications.html"><h4>Publications</h4></a></li>-->
+        <!--<li id="hovercol">  <a href="/research.html"><h4>Research</h4></a></li>
+        <li id="hovercol">  <a href="/publications.html"><h4>Publications</h4></a></li>-->
     </ul>
     <ul class="nav hidden-xs" id="sidebar-footer">
         <li>

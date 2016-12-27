@@ -19,6 +19,8 @@ author:
   bitbucket: vivkul
   mail: vivekakulharia@gmail.com
   resume: http://vivkul.github.io/static/resume.pdf
+  scholar: http://scholar.google.com/citations?user=wjrOaIIAAAAJ
+unused:
 research:
   - text: Publication Links
     elements:
@@ -28,7 +30,6 @@ research:
         url: http://www.informatik.uni-trier.de/SOMEUSER
       - name: Microsoft Academic Search
         url: http://academic.research.microsoft.com/Author/SOMEUSER
-unused:
   - text: Influence of Operations Research on Machine Learning
     elements:
       - name: Machine Learning

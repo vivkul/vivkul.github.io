@@ -1,5 +1,13 @@
-#vivkul.github.io
+# vivkul.github.io
 ================
+
+## TODO
+
+- Increase font of posts and remove bold size
+- Easily add images to blog following Andrej karpathy post
+- Try to move the left sidebar up, or otherwise decrease the space occupied
+
+------------
 
 Jekyll powered "app" for [my webpage](http://vivkul.github.io/). This is very modular. All you need to change in the data in _config.yaml and you can have your own awesome web home. I am thankful to [thejat](http://thejat.github.io/) for introducing me to Jekyll.
 

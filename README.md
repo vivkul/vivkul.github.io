@@ -1,7 +1,5 @@
 # vivkul.github.io
 
-================
-
 ## TODO
 
 - Increase font of posts and remove bold size
